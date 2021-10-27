@@ -8,9 +8,9 @@ import { Transition } from '../Components/Transition';
 import VideoComponent from '../Components/VideoComponent';
 import LottieAnimation from '../LottieAnimation';
 
-const MyComposition = (props: { play: boolean }) => {
+export const MyComposition = (props: { play: boolean }) => {
   return (
-    <Fragment>
+    <div>
       <Sequence from={0} durationInFrames={350}>
         <VideoComponent playVideo={props.play} />
       </Sequence>
@@ -36,7 +36,7 @@ const MyComposition = (props: { play: boolean }) => {
         </Transition>
       </Sequence>
       {/*<AnimatedImage playVideo={props.play} />*/}
-    </Fragment>
+    </div>
   );
 };
 

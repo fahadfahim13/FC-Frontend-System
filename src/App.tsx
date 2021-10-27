@@ -6,6 +6,7 @@ import PlayerComponent from './components/Player/PlayerComponent';
 
 import './App.css';
 import 'antd/dist/antd.css';
+import RenderButton from "./RenderButton";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       }}
     >
       <PlayerComponent />
+        <RenderButton />
       {/* <LottieAnimation/> */}
       {/*<Base />*/}
       {/*<FfmpegConnect />*/}
